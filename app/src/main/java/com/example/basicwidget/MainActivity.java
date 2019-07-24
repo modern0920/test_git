@@ -3,10 +3,7 @@ package com.example.basicwidget;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.RadioButton;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,13 +15,7 @@ public class MainActivity extends AppCompatActivity {
         RadioButton radioButton = (RadioButton) findViewById(R.id.radioButton);
         boolean checked = radioButton.isChecked();
 
-        Button button = findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"토스트메시지", Toast.LENGTH_LONG).show();
-            }
-        });
+
     }
 
 
